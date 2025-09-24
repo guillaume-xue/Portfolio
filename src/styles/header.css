@@ -1,0 +1,239 @@
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.header.light {
+  background-color: white;
+}
+
+.header.dark {
+  background-color: #111827;
+  /* gray-900 */
+}
+
+.header-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo/Brand */
+.header-logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-logo.light {
+  color: #1f2937;
+  /* gray-800 */
+}
+
+.header-logo.dark {
+  color: white;
+}
+
+/* Navigation Menu Container */
+.header-menu-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Navigation Menu */
+.header-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.header-menu li {
+  margin: 0;
+}
+
+/* Navigation Links */
+.header-link {
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.header-link.light {
+  color: #374151;
+  /* gray-700 */
+}
+
+.header-link.light:hover {
+  color: #2563eb;
+  /* blue-600 */
+}
+
+.header-link.dark {
+  color: #d1d5db;
+  /* gray-300 */
+}
+
+.header-link.dark:hover {
+  color: #60a5fa;
+  /* blue-400 */
+}
+
+/* Contact Button */
+.header-contact-btn {
+  background-color: #2563eb;
+  /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.header-contact-btn:hover {
+  background-color: #1d4ed8;
+  /* blue-700 */
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle-btn.light {
+  background-color: #f3f4f6;
+  /* gray-100 */
+}
+
+.theme-toggle-btn.light:hover {
+  background-color: #e5e7eb;
+  /* gray-200 */
+}
+
+.theme-toggle-btn.dark {
+  background-color: #1f2937;
+  /* gray-800 */
+}
+
+.theme-toggle-btn.dark:hover {
+  background-color: #374151;
+  /* gray-700 */
+}
+
+/* Theme Toggle Icons */
+.theme-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  transition: filter 0.3s ease;
+}
+
+.theme-icon.invert {
+  filter: invert(1);
+}
+
+/* Language Toggle Button */
+.language-toggle-btn {
+  padding: 0.375rem 0.75rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  min-width: 60px;
+}
+
+.language-toggle-btn.light {
+  background-color: #f3f4f6;
+  /* gray-100 */
+  color: #374151;
+  /* gray-700 */
+}
+
+.language-toggle-btn.light:hover {
+  background-color: #e5e7eb;
+  /* gray-200 */
+}
+
+.language-toggle-btn.dark {
+  background-color: #1f2937;
+  /* gray-800 */
+  color: #d1d5db;
+  /* gray-300 */
+}
+
+.language-toggle-btn.dark:hover {
+  background-color: #374151;
+  /* gray-700 */
+}
+
+.language-text {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-menu {
+    gap: 1rem;
+  }
+
+  .header-menu-container {
+    gap: 1rem;
+  }
+
+  .header-nav {
+    padding: 0.75rem 1rem;
+  }
+
+  .header-menu .header-link {
+    font-size: 0.875rem;
+  }
+
+  .header-contact-btn {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header-menu {
+    gap: 0.5rem;
+  }
+
+  .header-menu-container {
+    gap: 0.5rem;
+  }
+
+  .header-logo {
+    font-size: 1.125rem;
+  }
+}
