@@ -89,7 +89,8 @@ function Navbar({ darkMode, setDarkMode, language, setLanguage }) {
                 </a>
               </li>
             </ul>
-
+          </div>
+          <div>
             {/* Language Toggle Button */}
             <button
               onClick={toggleLanguage}

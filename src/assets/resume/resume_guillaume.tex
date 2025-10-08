@@ -1,0 +1,190 @@
+%-------------------------
+% Source Template : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Guillaume Xue} \\ \vspace{1pt}
+    \small \href{mailto:x@x.com}{\underline{guillaume.xue@outlook.fr}} $|$ 
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/guillaume-xue}} $|$
+    \href{https://github.com/...}{\underline{github.com/guillaume-xue}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Études}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Université Paris Cité}{Paris, France}
+        {\begin{tabular}[t]{@{}l@{}}Master Information et Mobilité : \\Programmations, Algorithmes pour Internet, Répartition et Systèmes\end{tabular}}{\begin{tabular}[t]{@{}l@{}}En cours \\Sep. 2024 -- Sep. 2026\end{tabular}}
+    \resumeSubheading
+      {Université Paris Cité}{Paris, France}
+      {License Informatique}{Sep. 2021 -- Juil. 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Éxperiences Professionnels}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Équipier Polyvalen}{Juin 2022 -- Aout 2022}
+      {Mcdonald}{Paris, France}
+      \resumeItemListStart
+        \resumeItem{Accueil et service à la clientèle dans un environnement rapide}
+        \resumeItem{Préparation des commandes selon les normes de l'entreprise}
+        \resumeItem{Collaboration efficace avec une équipe diversifiée pour assurer un service de qualité}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Ébénisterie et Menuiserie}{Sep. 2018 - Juil. 2019}
+      {Atelier Fabrice Lavainne, Atelier CMBC et L’Ecorse}{Paris, France}
+      \resumeItemListStart
+        \resumeItem{Apprentissage des techniques de travail du bois et de fabrication de meubles}
+        \resumeItem{Participation à la conception et à la réalisation de projets de menuiserie}
+        \resumeItem{Développement de compétences en précision et en souci du détail}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projets Universitaires}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Jeu Donjon Mystere} $|$ \emph{Ocaml}}{2025}
+          \resumeItemListStart
+            \resumeItem{Jeu vidéo avec \textbf{génération procédurale} de carte (automates cellulaires, Prim, Voronoï)}
+            \resumeItem{Implémentation d’une \textbf{IA de déplacement et de poursuite} du joueur via l’algorithme A*}
+            \resumeItem{Conception du jeu en \textbf{programmation fonctionnelle}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Système de réservation de billets} $|$ \emph{PostgreSQL}}{2025}
+          \resumeItemListStart
+            \resumeItem{Conception d’un \textbf{schéma relationnel avancé} pour un système de réservation complexe}
+            \resumeItem{Développement de \textbf{procédures et triggers PLpgSQL} pour la gestion transactionnelle}
+            \resumeItem{Simulation de \textbf{scénarios multi-utilisateurs} et \textbf{optimisation des performances SQL}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Jeu Bomberman} $|$ \emph{Langage C}}{2024}
+          \resumeItemListStart
+            \resumeItem{Développement \textbf{client–serveur en réseau (TCP/UDP & IPv6)}}
+            \resumeItem{Conception d’un \textbf{protocole réseau} et synchronisation en temps réel}
+            \resumeItem{Travail en équipe et \textbf{architecture logicielle robuste}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Application Amimaux} $|$ \emph{Kotlin}}{2024}
+          \resumeItemListStart
+            \resumeItem{Conception et implémentation d’une \textbf{application Android} pour la gestion d’animaux domestiques}
+            \resumeItem{Développement avec \textbf{Jetpack Compose} (UI), \textbf{ViewModel} (gestion d’état) et \textbf{Room} (base de données locale)}
+            \resumeItem{Gestion des \textbf{notifications} et de la \textbf{persistance des données}}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Jeu PieceOut} $|$ \emph{C++}}{2024}
+          \resumeItemListStart
+            \resumeItem{Conception \textbf{orientée objet} avec implémentation des \textbf{design patterns} (Decorator, Visitor)}
+            \resumeItem{Développement d’un \textbf{jeu de puzzle 2D} avec interface graphique \textbf{SFML}}
+            \resumeItem{Conception \textbf{modulaire (MVC)}, versionnement \textbf{Git}, et documentation \textbf{UML}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Compétances}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, HTML/CSS, PHP, Ocaml} \\
+     \textbf{Frameworks}{: React, JUnit, OUnit} \\
+     \textbf{Developer Tools}{: Git, VS Code, IntelliJ} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
